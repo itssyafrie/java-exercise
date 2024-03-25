@@ -1,5 +1,5 @@
 package com.adepuu.exercises.session5;
-
+import java.util.ArrayList;
 public class Exercise6 {
     /**
      * Java Array Program to Remove All Occurrences of an Element in an Array
@@ -12,6 +12,14 @@ public class Exercise6 {
      * Final result: [2, 3, 5]
      */
     public static void main(String[] args) {
-
+        int[] arr = new int[]{1, 2, 1, 3, 5, 1};
+        ArrayList<Integer> arrNew = new ArrayList<>();
+        int j = 1;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] != j) {
+                arrNew.add(arr[i]);
+            }
+        }
+        System.out.println("The new array is: " + arrNew);
     }
 }
